@@ -1,1 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Almira · Personal Site</title>
 
+<!-- Fonts & shared styles -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&family=JetBrains+Mono:wght@300;400;500;600&family=Syne:wght@400;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="active">Home</a>
+  <a href="#biodata">Biodata</a>
+  <a href="#skills-projects">Skills & Projects</a>
+  <a href="#hobi">Hobi</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact-comments">Contact</a>
+</nav>
+
+<!-- Hero section -->
+<div class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi, I'm <span id="typing"></span><span class="cursor-blink">|</span></h1>
+    <p>Welcome to My Personal Website. Explore my journey, skills, and creative projects.</p>
+  </div>
+  <div class="hero-img-wrapper">
+    <div class="orbit"></div>
+    <div class="spark"></div>
+    <img src="fotodiri.jpeg" class="hero-img" alt="Almira">
+  </div>
+</div>
+
+<!-- ========== BIODATA SECTION ========== -->
+<section id="biodata">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-subtitle">A glimpse of who I am beyond the screen</p>
+
+  <div class="bio-wrapper">
+    <div class="bio-card">
+      <div class="id-card">
+        <div class="id-inner">
+          <div class="id-front">
+            <div class="id-front-content">
+              <img src="fotodiri.jpeg" alt="profile" onerror="this.src='https://placehold.co/100x120?text=M'">
+              <h2>Mira</h2>
+            </div>
+          </div>
+          <div class="id-back">
+            <div class="id-back-container">
+              <div class="id-left"><h3>Almira Sadida</h3><p>Mahasiswa</p></div>
+              <div class="id-right">
+                <div><span>Nama</span><p>Mira</p></div>
+                <div><span>Umur</span><p>20 Tahun</p></div>
+                <div><span>Alamat</span><p>Aceh</p></div>
+                <div><span>Status</span><p>Mahasiswa</p></div>
+                <div><span>Motto</span><p>"Terus Berproses tidak perlu sempurna"</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bio-content">
+      <div class="elegant-quote">
+        ✨ Creating digital experiences that matter ✨
+      </div>
+      
+      <p class="bio-description">
+        I'm a Computer Science student with a deep passion for web development and UI/UX design. 
+        I love building clean, modern, and interactive digital experiences that not only look beautiful 
+        but also solve real problems. Currently focused on frontend development and constantly 
+        learning new technologies to stay ahead in this fast-paced industry.
+      </p>
+      <div class="info-grid">
+        <div class="info-item"><h4>🎓 Education</h4><p>Computer Science</p></div>
+        <div class="info-item"><h4>💻 Focus</h4><p>Web Development</p></div>
+        <div class="info-item"><h4>📍 Location</h4><p>Aceh, Indonesia</p></div>
+        <div class="info-item"><h4>🚀 Goal</h4><p>Software Engineer</p></div>
+      </div>
+      <div class="quote-text">"Build. Learn. Improve. Repeat."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS & PROJECTS SECTION (GABUNGAN) ========== -->
+<section id="skills-projects">
+  <h2 class="section-title">Skills & <span>Projects</span></h2>
+  <p class="section-subtitle">Technologies I master & creative works I've built</p>
+
+  <!-- SKILLS MARQUEE - BERJALAN TERUS LOOPING -->
+  <div class="skills-marquee reveal">
+    <div class="skills-track">
+      <span class="skill-chip">HTML5</span>
+      <span class="skill-chip">CSS3</span>
+      <span class="skill-chip">JavaScript</span>
+      <span class="skill-chip">React</span>
+      <span class="skill-chip">Tailwind CSS</span>
+      <span class="skill-chip">PHP</span>
+      <span class="skill-chip">MySQL</span>
+      <span class="skill-chip">Git & GitHub</span>
+      <span class="skill-chip">Figma</span>
+      <span class="skill-chip">UI/UX Design</span>
+      <!-- Duplikat untuk efek looping seamless -->
+      <span class="skill-chip">HTML5</span>
+      <span class="skill-chip">CSS3</span>
+      <span class="skill-chip">JavaScript</span>
+      <span class="skill-chip">React</span>
+      <span class="skill-chip">Tailwind CSS</span>
+      <span class="skill-chip">PHP</span>
+      <span class="skill-chip">MySQL</span>
+      <span class="skill-chip">Git & GitHub</span>
+      <span class="skill-chip">Figma</span>
+      <span class="skill-chip">UI/UX Design</span>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-icon">
+        <i class="fas fa-calculator"></i>
+      </div>
+      <div class="project-info">
+        <h3>Smart Calculator</h3>
+        <p>Kalkulator modern dengan 3 mode: Basic, Standard, dan Math. Dilengkapi fungsi trigonometri, logaritma, dan operasi matematika kompleks.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://kalkulator3options.netlify.app/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-icon">
+        <i class="fas fa-palette"></i>
+      </div>
+      <div class="project-info">
+        <h3>Lenge Rulung Leuser</h3>
+        <p>Desain UI/UX untuk platform edukasi dan konservasi kawasan Leuser. Menampilkan visual yang menarik dan user-friendly.</p>
+        <div class="project-tech">
+          <span>Figma</span><span>UI/UX</span><span>Prototype</span>
+        </div>
+        <a href="https://www.figma.com/design/DatykIlWayjV6mGxRYUgcp/PROJECT-2?node-id=14-7&t=eRxQYdsD0vGokxtg-0" target="_blank" class="project-link">
+          <i class="fab fa-figma"></i> View in Figma
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="project-info">
+        <h3>Personal Portfolio</h3>
+        <p>Website portofolio personal dengan desain modern, interaktif, dan fully responsive. Menampilkan identitas, karya, dan informasi lengkap.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+        </div>
+        <a href="http://almiraport.infinityfree.me/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hobi section -->
+<section id="hobi">
+  <h2 class="section-title">Things I Love</h2>
+  <p class="section-subtitle">Little escapes that make life colorful</p>
+  <div class="hobby-grid">
+    <a href="#" class="hobby-card" id="music-card">
+      <img src="music.jpg" class="cover" onerror="this.src='https://placehold.co/400x300?text=Music'">
+      <div class="content"><p class="label">Now Playing</p><h3>Music</h3><p>About You - The 1975</p></div>
+      <div class="action">▶ Play</div>
+      <audio id="music-audio" src="Lagu.mp4" preload="none"></audio>
+    </a>
+    <a href="https://www.youtube.com/watch?v=AwwbhhjQ9Xk" target="_blank" class="hobby-card">
+      <img src="movie.jpg" class="cover" onerror="this.src='https://placehold.co/400x300?text=Film'">
+      <div class="content"><p class="label">Recommended</p><h3>Film</h3><p>The Maze Runner</p></div>
+      <div class="action">▶ Watch</div>
+    </a>
+    <a href="https://ipusnas2.perpusnas.go.id/book/9f3e1bb6-5579-455f-9a46-4723d1ee707a" target="_blank" class="hobby-card">
+      <img src="book.jpg" class="cover" onerror="this.src='https://placehold.co/400x300?text=Book'">
+      <div class="content"><h3>Book</h3><p>Laut Bercerita</p></div>
+      <div class="action">📖 Read</div>
+    </a>
+  </div>
+</section>
+
+<!-- ========== GALLERY SECTION ========== -->
+<section id="gallery">
+  <h2 class="section-title">Captured Moments</h2>
+  <p class="section-subtitle">Memories frozen in time</p>
+  <div class="gallery-collage">
+    <div class="photo large"><img src="foto1.jpg" onerror="this.src='https://placehold.co/600x400?text=Photo1'"></div>
+    <div class="photo tall"><img src="foto2.jpg" onerror="this.src='https://placehold.co/400x600?text=Photo2'"></div>
+    <div class="photo"><img src="foto3.jpg" onerror="this.src='https://placehold.co/300x200?text=Photo3'"></div>
+    <div class="photo wide"><img src="foto4.jpg" onerror="this.src='https://placehold.co/800x300?text=Photo4'"></div>
+    <div class="photo"><img src="foto5.jpg" onerror="this.src='https://placehold.co/300x200?text=Photo5'"></div>
+  </div>
+</section>
+
+<!-- ========== CONTACT & COMMENTS SECTION (GABUNGAN) ========== -->
+<section id="contact-comments">
+  <h2 class="section-title">Get In <span>Touch</span></h2>
+  <p class="section-subtitle">Let's connect & share your thoughts</p>
+
+  <div class="contact-comments-wrapper">
+    <!-- LEFT: CONTACT INFO -->
+    <div class="contact-left reveal">
+      <h3><i class="fas fa-paper-plane"></i> Contact Me</h3>
+      <p class="contact-desc">Feel free to reach out for collaborations, questions, or just to say hi!</p>
+      
+      <div class="contact-items">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/qr/3AWBZRRJMKZLC1" target="_blank" class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+          <div class="contact-info">
+            <div class="contact-label">WHATSAPP</div>
+            <div class="contact-value">Chat with me</div>
+          </div>
+          <i class="fas fa-chevron-right arrow-icon"></i>
+        </a>
+        
+        <!-- Telepon -->
+        <a href="tel:085312947846" class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <div class="contact-info">
+            <div class="contact-label">PHONE</div>
+            <div class="contact-value">0853-1294-7846</div>
+          </div>
+          <i class="fas fa-chevron-right arrow-icon"></i>
+        </a>
+        
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/mira_al06" target="_blank" class="contact-card">
+          <i class="fab fa-instagram"></i>
+          <div class="contact-info">
+            <div class="contact-label">INSTAGRAM</div>
+            <div class="contact-value">@mira_al06</div>
+          </div>
+          <i class="fas fa-chevron-right arrow-icon"></i>
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/Miraaa24" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <div class="contact-info">
+            <div class="contact-label">GITHUB</div>
+            <div class="contact-value">Miraaa24</div>
+          </div>
+          <i class="fas fa-chevron-right arrow-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: COMMENTS -->
+    <div class="comments-right reveal">
+      <h3><i class="fas fa-comment-dots"></i> Guest Book</h3>
+      
+      <form id="commentFormCompact" class="comment-form-compact">
+        <div class="form-group">
+          <input type="text" id="commentNameCompact" placeholder="Nama lengkap" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="commentEmailCompact" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="commentMessageCompact" placeholder="Tulis komentar atau pesan Anda..." required></textarea>
+        </div>
+        <button type="submit" class="submit-comment">Kirim Pesan ✨</button>
+      </form>
+      
+      <div id="commentsListCompact" class="comments-list-compact">
+        <div class="no-comments-compact">Belum ada komentar. Jadilah yang pertama! 💫</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cursor"></div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
